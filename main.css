@@ -1,0 +1,30 @@
+body {
+  background-image: url('https://images.pexels.com/photos/1212600/pexels-photo-1212600.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+}
+
+.tag {
+  position: relative;
+}
+
+.tag::before,
+.tag::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  background: #2dd4bf;
+  height: 1px;
+  width: 30px;
+}
+
+.tag::after {
+  right: -2.25rem;
+}
+
+.tag::before {
+  left: -2.25rem;
+}
+
